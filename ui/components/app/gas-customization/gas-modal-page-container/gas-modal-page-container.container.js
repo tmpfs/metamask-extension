@@ -97,13 +97,15 @@ const mapStateToProps = (state, ownProps) => {
   const currentCurrency = getCurrentCurrency(state);
   const { showFiatInTestnets } = getPreferences(state);
   const isMainnet = getIsMainnet(state);
-  const showFiat = Boolean((isMainnet || showFiatInTestnets) && conversionRate)
+  const showFiat = Boolean((isMainnet || showFiatInTestnets) && conversionRate);
 
-  const newTotalFiat = showFiat ? sumHexWEIsToRenderableFiat(
-    [value, customGasTotal],
-    currentCurrency,
-    conversionRate,
-  ) : '';
+  const newTotalFiat = showFiat
+    ? sumHexWEIsToRenderableFiat(
+        [value, customGasTotal],
+        currentCurrency,
+        conversionRate,
+      )
+    : '';
 
   const { hideBasic } = state.appState.modal.modalState.props;
 
@@ -112,7 +114,7 @@ const mapStateToProps = (state, ownProps) => {
   const maxModeOn = getSendMaxModeState(state);
 
   const balance = getCurrentEthBalance(state);
-  
+
   const isSendTokenSet = Boolean(sendToken);
 
   const newTotalEth =
@@ -158,11 +160,13 @@ const mapStateToProps = (state, ownProps) => {
       gasButtonInfo,
     },
     infoRowProps: {
-      originalTotalFiat: showFiat ? sumHexWEIsToRenderableFiat(
-        [value, customGasTotal],
-        currentCurrency,
-        conversionRate,
-      ) : '',
+      originalTotalFiat: showFiat
+        ? sumHexWEIsToRenderableFiat(
+            [value, customGasTotal],
+            currentCurrency,
+            conversionRate,
+          )
+        : '',
       originalTotalEth: sumHexWEIsToRenderableEth([value, customGasTotal]),
       newTotalFiat: showFiat ? newTotalFiat : '',
       newTotalEth,
