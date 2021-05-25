@@ -111,7 +111,9 @@ describe('custom-gas selectors', () => {
     it('should return false gas.basicEstimates.price 0x28bed01600 (175) (checkSend=true)', () => {
       const mockState = {
         send: {
-          gasPrice: '0x28bed0160',
+          gas: {
+            gasPrice: '0x28bed0160',
+          },
         },
         gas: {
           customData: { price: null },
@@ -123,7 +125,9 @@ describe('custom-gas selectors', () => {
     it('should return true gas.basicEstimates.price 0x30e4f9b400 (210) (checkSend=true)', () => {
       const mockState = {
         send: {
-          gasPrice: '0x30e4f9b400',
+          gas: {
+            gasPrice: '0x30e4f9b400',
+          },
         },
         gas: {
           customData: { price: null },
@@ -225,7 +229,9 @@ describe('custom-gas selectors', () => {
             },
           },
           send: {
-            gasLimit: '0x5208',
+            gas: {
+              gasLimit: '0x5208',
+            },
           },
           gas: {
             basicEstimates: {
@@ -276,7 +282,9 @@ describe('custom-gas selectors', () => {
             },
           },
           send: {
-            gasLimit: '0x5208',
+            gas: {
+              gasLimit: '0x5208',
+            },
           },
           gas: {
             basicEstimates: {
@@ -327,7 +335,9 @@ describe('custom-gas selectors', () => {
             },
           },
           send: {
-            gasLimit: '0x5208',
+            gas: {
+              gasLimit: '0x5208',
+            },
           },
           gas: {
             basicEstimates: {
@@ -372,7 +382,9 @@ describe('custom-gas selectors', () => {
             },
           },
           send: {
-            gasLimit: '0x5208',
+            gas: {
+              gasLimit: '0x5208',
+            },
           },
           gas: {
             basicEstimates: {
@@ -433,7 +445,9 @@ describe('custom-gas selectors', () => {
             },
           },
           send: {
-            gasLimit: '0x5208',
+            gas: {
+              gasLimit: '0x5208',
+            },
           },
           gas: {
             basicEstimates: {
@@ -478,7 +492,9 @@ describe('custom-gas selectors', () => {
             },
           },
           send: {
-            gasLimit: '0x5208',
+            gas: {
+              gasLimit: '0x5208',
+            },
           },
           gas: {
             basicEstimates: {
@@ -529,7 +545,9 @@ describe('custom-gas selectors', () => {
             },
           },
           send: {
-            gasLimit: '0x5208',
+            gas: {
+              gasLimit: '0x5208',
+            },
           },
           gas: {
             basicEstimates: {
@@ -580,7 +598,9 @@ describe('custom-gas selectors', () => {
             },
           },
           send: {
-            gasLimit: '0x5208',
+            gas: {
+              gasLimit: '0x5208',
+            },
           },
           gas: {
             basicEstimates: {
@@ -625,7 +645,9 @@ describe('custom-gas selectors', () => {
             },
           },
           send: {
-            gasLimit: '0x5208',
+            gas: {
+              gasLimit: '0x5208',
+            },
           },
           gas: {
             basicEstimates: {
