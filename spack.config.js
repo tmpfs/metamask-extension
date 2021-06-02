@@ -2,16 +2,15 @@ const path = require('path');
 const { config } = require('@swc/core/spack')
 
 
-module.exports = config([{
+module.exports = config({
   entry: {
-    //'main': __dirname + '/stories.js',
-    'main': __dirname + '/main.js',
+    'main': __dirname + '/stories.js',
   },
   output: {
     path: path.join(__dirname, "builds", "stories"),
   },
   module: {},
-}]);
+});
 
 //module.exports = config({
   //entry: {

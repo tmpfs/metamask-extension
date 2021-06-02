@@ -1,7 +1,8 @@
 //import "./ui/pages/swaps/slippage-buttons/slippage-buttons.stories.js"
 //import "./ui/pages/swaps/actionable-message/actionable-message.stories.js"
 //import "./ui/pages/swaps/dropdown-input-pair/dropdown-input-pair.stories.js"
-//import "./ui/pages/swaps/exchange-rate-display/exchange-rate-display.stories.js"
+
+import "./ui/pages/swaps/exchange-rate-display/exchange-rate-display.stories.js"
 //import "./ui/pages/swaps/main-quote-summary/main-quote-summary.stories.js"
 //import "./ui/pages/swaps/dropdown-search-list/dropdown-search-list.stories.js"
 //import "./ui/pages/swaps/fee-card/fee-card.stories.js"
